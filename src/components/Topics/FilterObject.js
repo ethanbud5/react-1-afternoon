@@ -19,10 +19,10 @@ class FilterObject extends Component {
     doFilter(){
         let unFiltered = this.state.unFilteredArray.slice();
         let filtered = unFiltered.filter((obj,i)=>{
-            let hasProp = true;
+            let hasProp = false;
             for(let key in obj){
                 if(key === this.state.userInput){
-                    hasProp = false
+                    hasProp = true
                 }
             }
             return hasProp;
