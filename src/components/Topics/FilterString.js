@@ -33,7 +33,7 @@ class FilterString extends Component{
                 <span className="puzzleText">{this.state.unFilteredArray}</span>
                 <input className="inputLine" onChange={(e)=>this.changeInput(e)}></input>
                 <button className ="confirmationButton" onClick={(e)=>this.doFilter(e)}>Filter</button>
-                <span className="resultsBox filterStringRB">{this.state.filteredArray}</span>
+                <span className="resultsBox filterStringRB">{JSON.stringify(this.state.filteredArray)}</span>
             </div>
         )
     }
